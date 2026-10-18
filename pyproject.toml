@@ -1,0 +1,13 @@
+[project]
+name = "books-service"
+version = "0.1.0"
+description = "A minimal FastAPI CRUD service for books with in-memory storage"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+]
+
+[project.scripts]
+books-service = "uvicorn app.main:app"
